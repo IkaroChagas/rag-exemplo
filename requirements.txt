@@ -1,0 +1,9 @@
+anthropic
+google-genai
+sentence-transformers
+psycopg[binary]
+pgvector
+numpy
+python-dotenv
+fastapi
+uvicorn[standard]

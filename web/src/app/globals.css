@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f7f8;
+  --surface: #ffffff;
+  --foreground: #16191d;
+  --muted: #5f6b76;
+  --border: #e3e7eb;
+  --accent: #0e7c86;
+  --accent-soft: #e3f3f4;
+  --user-bubble: #0e7c86;
+  --user-text: #ffffff;
+  --danger: #b42318;
+  --danger-soft: #fdecea;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f1214;
+    --surface: #171b1f;
+    --foreground: #e8ecef;
+    --muted: #94a0aa;
+    --border: #2a3036;
+    --accent: #3fb8c2;
+    --accent-soft: #15302f;
+    --user-bubble: #1f5d63;
+    --user-text: #f2fbfb;
+    --danger: #f97066;
+    --danger-soft: #3a1a17;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-user-bubble: var(--user-bubble);
+  --color-user-text: var(--user-text);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
